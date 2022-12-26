@@ -6,9 +6,14 @@ const TaskList = () => {
 
     let { tasks } = useContext(TaskListContext)
 
-    return (
-        <div>TaskList</div>
-    )
+    return <div>
+        <ul className='list'>
+            {tasks.map((task) => {
+                return
+            })}
+        </ul>
+    </div>
+
 }
 
 export default TaskList
